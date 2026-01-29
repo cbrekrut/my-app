@@ -1,0 +1,12 @@
+services:
+
+  frontend-taxi-crm:
+    build:
+      context: ./
+    volumes:
+      - ./:/app/result_build/
+      - taxi_crm_front_build:/app/result_build/dist/
+
+volumes:
+  taxi_crm_front_build:
+    name: taxi_crm_front_build
